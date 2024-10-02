@@ -53,7 +53,9 @@ def lr4():
                               x = data[cols[j]],
                               cmap = 'coolwarm',
                               warn_singular= False,
-                              ax = axes[i, j]).set_title(f'График двумерной плотности распределения {cols[i]}  от {cols[j]}')
+                              ax = axes[i, j])
+
+    fig.suptitle('Графики двумерных плотностей распределения', fontsize=16)
     plt.show()
 
     #Комбинированные диаграммы
